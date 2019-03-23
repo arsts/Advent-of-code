@@ -4,13 +4,14 @@
   "description": "",
   "main": "SantaHelper.js",
   "scripts": {
-    "start": "nodemon"
+    "start": "node"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
+    "file-system": "^2.2.2",
     "nodemon": "^1.18.10"
   }
 }
