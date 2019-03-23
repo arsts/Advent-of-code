@@ -7,12 +7,12 @@ let floorNum = 0;
 
 fs.readFile('./Puzzleinput.txt', (err, data) => {
     console.time('funchallenge');
-
+    let enterCount = 0;
     if (err) {
         throw err
     } else {
         const file = data.toString();
-        for (var i = 0; i < file.length; i++) {
+        for (let i = 0; i < file.length; i++) {
             if (file.charAt(i) === '(') {
                 floorNum += 1;
             } 
