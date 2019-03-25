@@ -1,11 +1,13 @@
 const fs = require('fs');
 
-fs.readFile('./input.txt',(err, data) => {
+fs.readFile('./input.txt', 'utf8', (err, data) => {
     if (err) {
         throw err
     } else {
-        const file = data.toString();
-
+        const regex = new RegExp('x|[]|\r\n')
+        const file = data.split(regex);
+        
+       
+        console.log(file);
     }
-    console.log(data);
 });
