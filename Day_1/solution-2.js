@@ -1,7 +1,7 @@
 // FS module setup
 const fs = require('fs');
 
-// variable to store floor
+
 
 fs.readFile('./Puzzleinput.txt', (err, data) => {
     console.time('funchallenge');
@@ -18,15 +18,8 @@ fs.readFile('./Puzzleinput.txt', (err, data) => {
         position ++
         return floorNum < 0;
     })
-
-    
-        
-        
-        
-        // console.log(enterBase);
-        
+     
 
         console.timeEnd('funchallenge');
-        console.log(floorNum);
-        console.log(position);
+
 })

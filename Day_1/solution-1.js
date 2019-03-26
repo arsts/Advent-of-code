@@ -1,7 +1,7 @@
 // FS module setup
 const fs = require('fs');
 
-// variable to store floor
+
 let floorNum = 0;
 
 
